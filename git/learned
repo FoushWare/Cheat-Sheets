@@ -109,6 +109,15 @@ git push <remote name > < name of local branch i'd like to push > =>
 
 push the changes to repo in github
 
+--------note------
+
+    when the repo has been initialized (git init lis4368/assignments),
+    but no commit has ever been made
+
+Ie, if you don't have added and committed at least once, there won't be a local master branch to push to.
+----------------------
+
+
 
 git pull <remote name > < name of local branch i'd like to pull info added in github to it  >   => to pull changes from repo in github to my local machine
 
