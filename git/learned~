@@ -1,0 +1,162 @@
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^lesson1^^^^^^^^^^^^^^^^^^^^^^
+intro:_
+        git clone , git diff ,git log ,git checkout 
+
+
+go to the repo you want to play with it be inside of it ....
+
+git clone Url => to copy the repo from the internet to the current directory
+
+
+
+git log => to show the recent commits 
+
+git diff previous_commit new_commit  => to show the difference + mean added to the new_version  - mean deleted from the first version 
+ 
+******colour config************
+git config --global color.ui auto => to make the color of the information about the differences colored red for deletion and green for addation 
+************************************
+commit=>is a snapshot of every file in the repo 
+
+git checkout id_of_commit => to switch to a particlur commit and this new commit is the head commit (current commit you are working on  )
+
+----------------------------------------
+git checkout commit_id => go to this version of this id  and make it the head of the repo to check it out (we use it when we want to check a bug in code we switch to a previous version of code to check it out if this old version is better than the current one )
+---------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^lesson2^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ intro:_  you will learn
+  1-use git on your own machine for solo   projects
+  2-create repo and make commit 
+  3-how to merge and branch in Git 
+
+notes:
+       git repository.... store bunch of metadata about the history of rebpository since it was created (where is the metadata )
+ok it's in hidden file (.git) 
+
+-----why hidden file----- it's usually hidden the data that the user doesn't need to directly interact with it 
+
+
+git init => make a repo 
+git status => show what file have changed since the last commit 
+
+git add filename[or directory] => to add the files on at a time to the staging area (intermedia area)
+
+note:
+....................................................................
+if you accidentally add a file to the staging area, you can remove it using git reset. For example, if you accidentally add lesson_2_reflections.txt, but don’t want it to be committed yet, run git reset lesson_2_reflections.txt and the file will be removed from the staging area, but it will still be in your working directory.
+......................................................................
+NOte:_     When you want to  use => git commit
+
+you should make this configs.....
+1.git init
+2.git config user.name "someone"
+3.git config user.email "someone@someplace.com"
+4.git add *
+5.git commit -m "some init msg"
+
+
+
+---------------------------------------
+git commmit  => the editor will open and you can write your comment 
+
+
+git reset --hard => discard any changes in working directory or staging area  (but be careful cause you can't get theses changes back)
+
+------------------branches------------------------------------
+Note: head mean current commit 
+
+git branch => show me the current branch 
+
+git branch <new-branch> => make a branch with the name new-branch
+
+Note:--
+ since i've creat the new-brance it has the same code as masterbranch
+
+
+ git log --graph --oneline branches (seperated by space)=> see the visual representation of the commit history 
+
+
+git show => to show you the changes in the current commit 's parent without known what actually the parent was 
+
+git branch -d branch-name => to delete the branch (note) this won't delete the branch's commits but it will delete the lable of the branch mean the branch's name 
+
+00000000000000000000000000 git merge 0000000000000000
+
+A note about git merge
+
+git merge will also include the currently checked-out branch in the merged version. So if you have branch1 checked out, and you run git merge branch2 branch3, the merged version will combine branch1 as well as branch2 and branch3. That’s because the branch1 label will update after you make the merge commit, so it’s unlikely that you didn’t want the changes from branch1 included in the merge. For this reason, you should always checkout one of the two branches you’re planning on merging before doing the merge. Which one you should check out depends on which branch label you want to point to the new commit.
+
+Since the checked-out branch is always included in the merge, you may have guessed that when you are merging two branches, you don't need to specify both of them as arguments to git merge on the command line. If you want to merge branch2 into branch1, you can simply git checkout branch1 and then type git merge branch2. The only reason to type git merge branch1 branch2 is if it helps you keep better mental track of which branches you are merging.
+
+Also, since the two branches are merged, the order in which they are typed into the command line does not matter. The key is to remember that git merge always merges all the specified branches into the currently checked out branch, creating a new commit for that branch. 
+
+00000000000000000000000000000  github  0000000000000000000000000
+
+remote:is the way you can put you repo in github 
+
+git remote => to show all remotes
+
+git remote  add  <repo-name-in-github> <URL of the repo on github> =>
+
+to make remote to the repo in the github
+
+
+
+git remote -v => to verify that i post the correct url this will show me the <fetch> and <push> url
+
+
+git push <remote name > < name of local branch i'd like to push > =>
+
+push the changes to repo in github
+
+
+git pull <remote name > < name of local branch i'd like to pull info added in github to it  >   => to pull changes from repo in github to my local machine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+  
+
+

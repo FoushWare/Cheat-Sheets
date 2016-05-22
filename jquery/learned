@@ -1,0 +1,58 @@
+====introduction====
+jquery is a library of javascript 
+
+====selection===
+$ => is a superglobal object 
+$('tag');  select an element with tag 
+$('.class'); select an element with it's class
+$('#id');    select an element with it's unique id 
+=====jQuery API====
+
+
+=====changing DOM element css classes ====
+selected_element.toggleClass("classname");=> to add or remove class to selected elment 
+
+selected_element.next(); => to get the next sibling of the current element 
+
+
+========change attributes and set attributes==========
+
+selected_element.attr("attributename", "value"); => to change the attribute value and to put attribue if it isn't found 
+
+=========poroparty and value using css=====
+selected_element.css(proparty,value); => to set the value to the probarty
+
+selected_element.css(proparty); => to get the value from the probarty
+
+==========inside <tag>??????</tag> mean contant of tag==========
+
+Selected_element.val(); => get the value of some form elemnt such as input ,select,textarea 
+
+Selected_element.val(value); => put the value to  some form elemnt such as input ,select,textarea 
+
+Selected_element.html(); => to get the content of the selected element in the form of html mean tags links and so on  NOte: used only in html not xml 
+
+Selected_element.html(value); => to put value in the placeholder of the selected tag  e.g <p>Here</P>
+
+Selected_element.text(); => to get the content of the selected element and all decendants with the form of text not without it's tags unlike the [.html() method] Note:used in both html and xml document 
+
+=======deleting a DOM element=========
+Selected_element.remove(filter); => delete the selected element with the specific filter 
+
+======adding a DOM element ========
+selected_element.append("element"); => append the element as a last child to the selected_element
+
+selected_element.prepend("element"); => append the element before the selected_element 
+
+element.insertBefore(target); => insert the element before the target 
+ 
+
+
+ 
+
+
+
+
+
+
+
