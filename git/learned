@@ -124,6 +124,11 @@ git pull <remote name > < name of local branch i'd like to pull info added in gi
 
 git fetch => update the local copy of the remote branch 
 
+_________________________________PUSH____________________________
+If the GitHub repo has seen new commits pushed to it, while you were working locally, I would advice for:
+$ git pull --rebase
+$ git push
+
 
 
 
