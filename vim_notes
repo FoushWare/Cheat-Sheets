@@ -1,2 +1,19 @@
->>>delete annoying spellcheck
-----> :hi clear SpellBad     
+>>>>>>>>>>>>>>>delete annoying spellcheck<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+----> :hi clear SpellBad
+
+>>>>>>>>>>>>>>>folding<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+(manually)
+:set foldmethod=manual 
+--> (v) for visual mode and hightlight what you want then press (zf) for folding and (za) for unfolding .....(zR) to unfold every folded in the page mean unfold recursifly  
+ 
+>>>>>>>>>>>>>>>>>>dublicate a line<<<<<<<<<<<<<<<<<<<<<<<<<<
+yy ---> to copy a line + p  ==> dublicate the line  
+(D)OR(dd) ==>delete a line 
+>>>>>>>>>>>>>>>>>>>>>incremant the number<<<<<<<<<<<<<<<<<<<<
+stand on the number and press ==> ctrl+a
+
+>>>>>>>>>>>>colorscheme && syntax highlight <<<<<<<<<<<
+:set colorscheme <name_of_color> ==>to set the color to the vim
+:set syntax on =>to enable syntax hightlight
+:set syntax off=>to diablae syntax hightlight
+:set syn=java  =>to enable syntax hightlight for java 
