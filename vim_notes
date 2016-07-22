@@ -17,3 +17,11 @@ stand on the number and press ==> ctrl+a
 :set syntax on =>to enable syntax hightlight
 :set syntax off=>to diablae syntax hightlight
 :set syn=java  =>to enable syntax hightlight for java 
+---------------------NEW TAB------------------------------
+
+:tabe % ==>
+Opens a tab, editing the current file-name, % is the name of the current file.
+:Te or :tabe %:h==>Opens a tab, show the current file directory.
+
+gt==>Go to next tab.
+gT==>Go to last tab.
