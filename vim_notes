@@ -25,3 +25,30 @@ Opens a tab, editing the current file-name, % is the name of the current file.
 
 gt==>Go to next tab.
 gT==>Go to last tab.
+--------------------------------------------auto save the file------- 
+type in vim this command 
+:autocmd CursorHold,CursorHoldI * update
+---------------------------------------------------------------------
+move To the begging of the line ==>   ^ OR zero OR (shift+i)=> this will go to the begging of the line and switch to insert mode  
+-----------------------------------
+---------Select All the code in the vim  -------
+:%y+ (% --> All , y-->yand,+ --> copy to clipboard)
+
+---------------------------------------------------------------
+ go to specific line    for example  50G
+
+ ---------------------------------------------------------------
+ How do I tidy up an HTML file's indentation in VI?
+ :filetype indent on
+ :set filetype=html           # abbrev -  :set ft=html
+ :set smartindent             # abbrev -  :set si
+ _________________________________________________________
+ How to merge multiple lines into on line in vim: (useful for css)
+ [where to beging] j [number_of_lines]
+ %j    => (% for all the file)
+5j2    => contract from line 5 to the next 2 lines  
+if you don't want  to replace the new lines with spaces use !
+for example  j!10  
+
+____________________________________________________OR 
+ type v to select the lines you want then   shift+j

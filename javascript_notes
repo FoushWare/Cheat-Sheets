@@ -1,0 +1,14 @@
+Methods that deal with strings
+    ____________________________________
+1-String.substr(startpoint,numberOfCharacterToExtract)==>
+this will return the specified string from the start to what you stop
+--some cases=>
+if the start is nagitive it will start with the end of string 
+if the start is nagitive and is greater than the string length this will start from the first char in the string
+if the start is positive and is greater than the string length this will return empty string 
+---------------------------------------------
+2- String.slice(startPoint,endPoint);
+cut the string from the startpoint to endPoint not including the endpoint
+it's cases is the same as substr() function
+---------------------------------------------------
+
