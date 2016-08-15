@@ -1,0 +1,6 @@
+-------- margin & padding------
+margin:top right bottom left;
+padding:top right bottom left;
+
+------------ font--------
+font: font-weight font-size/line-height font-family;
