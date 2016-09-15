@@ -52,3 +52,10 @@ for example  j!10
 
 ____________________________________________________OR 
  type v to select the lines you want then   shift+j
+
+--------------------------------------------------------------------
+How to write comment quickly?
+just type  =>  gcc   to comment and uncomment the line 
+----------------------------------------------------------
+Refresh the page ---> :edit
+
