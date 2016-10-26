@@ -1,0 +1,6 @@
+CTRL+ U ==> Delete all contents to the left of the cursor 
+CTRL+ E ==> Cursor the end of line
+CTRL + K==> Delete right of the cursor
+CTRL+W==> Delete word on the left
+!!    ==> repeat last typed command 
+CTRL+a==> to go to the beginning of the line 

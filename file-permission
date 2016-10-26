@@ -1,0 +1,14 @@
+chmod owner-group-world file OR directory
+i.e => chmod 775 fouad.php
+
+1 -> executable
+4 -> Read
+2 -> Write
+
+---------------------
+chown ==> this command to change the owner and group of file OR directory
+
+chown  owner:group FILE OR DIRECTORY
+
+i.e  (chown root:tom fouad.php) ==> this change the owner of the file to root and the group to tom
+i.e  (chown :tom)               ==> this will change only the group-owner to tom and leave the default for owner

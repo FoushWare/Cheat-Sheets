@@ -1,0 +1,15 @@
+module of docker [consists of ]
+  ----Docker Engine  --> environment that contain all image (like vbox Gui)
+  ----images         --> templete like in virtual machine (iso of OS)
+  ----containers
+  ----Registries and Repositories
+
+------------------------------------------
+
+sudo service docker restart ==> to restart the docker when it say to your.... docker: Cannot connect to the Docker daemon. Is the docker daemon running on this host?. 
+docker run -it fedora /bin/bash ==> to run the image of fedora if it exists locally if not it will download it from dockerhup
+docker pull -a fedora           ==> pull all images of fedora to get all version of it locally
+docker ps                       ==> to know the running docker container at the moment
+docker ps -a                    ==> to show all containers that was running
+CTRL+b+q                        ==> to leave the image and leave it running  
+docker images                   ==> to show all installed images in your host

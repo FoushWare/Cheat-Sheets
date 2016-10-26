@@ -1,0 +1,18 @@
+start command: $ sudo /opt/lampp/lampp start
+
+If you want XAMPP to start automatically when you logon to the system:
+Open terminal and run following command sudo gedit /etc/init.d/lampp
+
+paste following code in open file
+
+#!/bin/bash
+/opt/lampp/lampp start
+save and close the file
+
+run following command to make this script executable
+sudo chmod +x /etc/init.d/lampp
+
+run following command to install init scripts to all runlevel
+
+sudo update-rc.d lampp defaults
+restart the system

@@ -1,0 +1,1 @@
+change default editor ==>sudo update-alternatives --config editor

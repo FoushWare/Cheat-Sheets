@@ -58,4 +58,7 @@ How to write comment quickly?
 just type  =>  gcc   to comment and uncomment the line 
 ----------------------------------------------------------
 Refresh the page ---> :edit
+----------------------------------------------------------
+: set wrap ==> to make the words wrap over lines
+: set nowrap==> to make the words take the whole line and extended over the line 
 

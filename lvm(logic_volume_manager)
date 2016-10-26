@@ -1,0 +1,13 @@
+first thing first ....==> this is a good reference for LVM http://www.tldp.org/HOWTO/LVM-HOWTO/index.html
+and this wiki ==>https://en.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29
+what is LVM in linux?
+in Linux, Logical Volume Manager (LVM) is a device mapper target that provides logical volume management for the Linux kernel. 
+what is it's benefit?
+volumes with LVM can be resized ,moved
+-for large volumes you can mange the volume as groups rather than using sda1 sda2 ,.... you can use "developing","sales" and this give you top-view of storage-volume 
+
+****
+what is the benefit of LVM in large system?
+it's a good way with many disk drives cause managing it is a time consuming job,
+you can allocate specific volumes to groups ...ha ha ha :) .... so what i can do if i add a new derive?
+ok ... rather than transfer the groups content to the new hard-disk ==> you can can add the new disk to groups so ,groups can extend
