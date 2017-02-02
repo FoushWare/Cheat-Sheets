@@ -1,0 +1,15 @@
+CTrl+shift+f12 => maximize and minimize editor
+Ctrl+tab       => switch between project tabs
+shift+shift    => search everthing include code and menu 
+ctrl+o         => override Methods
+ctrl+i         => implement Methods
+ctrl+plus/minus=> collapse and expand the current block of code
+ctrl+p         => show parameter of selected method
+ctrl+B         => Go to declaration
+ctrl+alt+B     => Go to implemention
+
+
+
+stop:=> go to super Method
+
+
