@@ -1,0 +1,7 @@
+shift +f2 => hide and show the menu contains workspace and project files
+Alt+G => search in the files of the project 
+ctrl+f9=> build the files 
+ctrl+f10=> run the files 
+ctrl+rightClick => to search the google for that code 
+ctrl+D => duplicate the line 
+Tab/shift-tap => to indent and unindent the line of code
