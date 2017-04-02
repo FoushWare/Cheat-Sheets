@@ -3,3 +3,198 @@ ctrl+shift+ (+) ===> to get the font in lagre
 ctrl+ (-)==========> to make the font-size  Small
 ----------------------------------------------------
 detch process from terminal ==> nohup  process &  i.e (nohup firefox &)
+
+=====================================
+Abeer course all credits  :>  it's me fouad from the other side 
+
+
+absolute paths and Relative paths:
+
+-For standard Linux file systems, the path name of a file, including all / characters, may be no more than 4095 bytes long.
+
+-Each component of the path name separated by / characters may be no more than 255 bytes long.
+
+[root@master Desktop]# cd
+
+[root@master ~]# cd /root/Videos
+
+[root@master ~]# cd Videos
+
+[root@master ~]# pwd
+
+[root@master Videos]# cd /root/Documents
+
+[root@master ~]# cd ~abeer               (go to the home directory of the user)
+
+[root@master abeer]# cd -                (go to the previous directory)
+
+[root@master abeer]# cd ..               (up one level)
+
+[root@master abeer]# cd ../..            (up two levels)
+
+========================================
+
+list files:
+
+[root@master ~]# ls
+
+[root@master ~]# ls -l ~          (long list)
+
+[root@master ~]# ls -a            (all files and directories including hidden ones)
+
+[root@master ~]# ls -la
+
+[root@master ~]# ls -lh           (human readable)
+
+[root@master ~]# ls -R            (Recursive)
+
+[root@master ~]# ls -t            (access time)
+
+[root@master ~]# ls -r            (reverse order)
+
+[root@master ~]# dir
+
+[root@master ~]# dir --color
+
+
+
+========================================
+
+Creating files:
+
+[root@master ~]# touch file1 FILE1    (case sensitive)
+
+[root@master ~]# touch /root/Documents/file
+
+[root@master ~]# ls -R
+
+- If the file exist, it will reset the timestamp of the file.
+
+========================================
+
+Create directories:
+
+[root@master ~]# mkdir dir1 dir2 dir3
+
+[root@master ~]# mkdir -p dir4/dir5
+
+[root@master ~]# mkdir 'abeer hosni'
+
+[root@master ~]# mkdir "abeer hosni"
+
+[root@master ~]# mkdir abeer\ hosni
+
+========================================
+
+Copy files and diretories:
+
+[root@master ~]# cp file1 file2      (creates file2)
+
+[root@master ~]# cp file1 /root/Documents/
+
+[root@master ~]# cp file1 file2 file3 /root/Documents/   (last argument must be a directory)
+
+[root@master ~]# cp -r /etc/ dir1                (copy non-empty directory)
+
+[root@master ~]# cp -r /etc/* dir1               (copy the contents of he directory)
+
+[root@master Documents]# cp ~/file1  .
+
+========================================
+
+Move files and directories:
+
+[root@master ~]# mv file1 new_file1         (to rename the file1)
+
+[root@master ~]# mv file1 file2 file3 /root/Documents/    (last argument must be a directory)
+
+[root@master ~]# mv dir1 dir2 dir3 dir4      (last argument must be a directory)
+
+========================================
+
+Remove files and directories:
+
+[root@master ~]#rm file1     (interactive by default for the root)
+
+[root@master ~]# rm -f file1 file2 file3      (force remove)        
+
+[root@master ~]# rm -d dir1      (removes an empty directory)
+
+[root@master ~]# rmdir dir1      (removes an empty directory)
+
+[root@master ~]# rm -rf dir1     (removes a non-empty directory)
+
+========================================
+
+nautilus:
+
+[root@master ~]# nautilus
+
+[root@master ~]# nautilus /etc/
+
+========================================
+
+File globbing (wildcard) (pattern matching) (path name expansion):
+
+[root@master ~]#touch alfa bravo charlie delta echo able baker cast dog easy
+
+[root@master ~]#ls a*      (Only file names beginning with "a")
+
+[root@master ~]#ls *a      (Only file names ending with "a")
+
+[root@master ~]#rm -f a*
+
+[root@master ~]#ls *a*     (Only file names containing "a")
+
+[root@master ~]#ls [!a]*   (Only file names where first character is not "a")
+
+[root@master ~]#ls [ac]*
+
+[root@master ~]#ls ????
+
+[root@master ~]#ls ?????
+
+[root@master ~]#touch file1 file2 file3 file4 file11 file12 file111 filea fileb fileab fa fab fabc
+
+[root@master ~]#ls f?
+
+[root@master ~]#ls f??
+
+[root@master ~]#ls file[a-c]
+
+[root@master ~]#ls file[^a-c]
+
+[root@master ~]#echo ~abeer
+
+==============================================
+
+Variable substitution:
+
+[root@master ~]# x=5
+
+[root@master ~]# echo x
+
+[root@master ~]# echo $x       (The value of variable x)
+
+
+
+Command substitution:
+
+[root@master ~]# echo "Today is $(date)"
+
+
+
+Arithmatic substitution:
+
+[root@master ~]# echo "Sum of 1 plus 2 is $[1+2]"
+
+[root@master ~]# echo "Sum of 1 plus 2 is $((1+2))"
+
+==============================================
+
+best wishes:
+
+Abeer :)
+
+******************************************************************************************
+

@@ -1,3 +1,7 @@
+>>>>>>set vim as the default editor in unix>>>>>>
+sudo update-alternatives --config editor
+# Type the number which corresponds to Vim here (after installing it) then press Enter.
+
 >>>>>>>>>>>>>>>delete annoying spellcheck<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 ----> :hi clear SpellBad
 
@@ -9,6 +13,8 @@
 >>>>>>>>>>>>>>>>>>dublicate a line<<<<<<<<<<<<<<<<<<<<<<<<<<
 yy ---> to copy a line + p  ==> dublicate the line  
 (D)OR(dd) ==>delete a line 
+P => to past after the cursor
+p(small)=> to past before the cursor
 >>>>>>>>>>>>>>>>>>>>>incremant the number<<<<<<<<<<<<<<<<<<<<
 stand on the number and press ==> ctrl+a
 
@@ -28,8 +34,9 @@ gT==>Go to last tab.
 --------------------------------------------auto save the file------- 
 type in vim this command 
 :autocmd CursorHold,CursorHoldI * update
----------------------------------------------------------------------
+-------------------------- Line_moves-------------------------------------------
 move To the begging of the line ==>   ^ OR zero OR (shift+i)=> this will go to the begging of the line and switch to insert mode  
+move to the end of the line => A     :)
 -----------------------------------
 ---------Select All the code in the vim  -------
 :%y+ (% --> All , y-->yand,+ --> copy to clipboard)
@@ -61,4 +68,30 @@ Refresh the page ---> :edit
 ----------------------------------------------------------
 : set wrap ==> to make the words wrap over lines
 : set nowrap==> to make the words take the whole line and extended over the line 
+_____________________________________________________________________________________
+NOte_time:	25/3/2017
+
+:h  => to get the online help 
+
+make like bookmark to return to that line again fast =>
+
+If you find yourself editing a file that is larger than one screen, you will appreciate the functionality provided by marks. You can think of a mark in vim as a bookmark – once you place it somewhere, you can go back to it quickly and easily. Suppose you are editing a 300-word configuration file and for some reason need to repeatedly switch between lines 30 and 150 for example.
+
+First, go to line #30 by entering :30 in ex mode, then return to command mode and hit ma (m, then a) to create a mark named “a” in line 30.
+
+Then go to line 250 (with :250 in ex mode) and hit `a (backtick, then a) to return to mark a in line 30. You can use lowercase and uppercase letters to identify marks in vim (now repeat the process to create a mark named A in line #250).
+
+////////////////////////////  Search ///////////////
+
+/[anything]=> to search for anything 
+
+
+
+
+
+
+
+
+
+
 
