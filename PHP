@@ -1,0 +1,4 @@
+make a soft link of htdocs  ==> i make this note cause i'm lazy i don't want to go to the direcorty from the nautilus every time it's easy from the Desktop
+
+ln -s    [SOURCE] /opt/lampp/htdocs/   [Destination]/home/tom/Desktop/
+
