@@ -1,0 +1,11 @@
+#!/bin/bash
+cd /home/tom/Desktop/test
+mkdir layout includes data
+mkdir -p layout/{css,images,js,fonts}
+mkdir -p includes/{templates,functions,languages,libraries}
+mkdir -p data/{uploads,cache,logs,docs}
+
+mkdir -p Admin/{layout,includes,data}
+mkdir -p layout/{css,images,js,fonts}
+mkdir -p includes/{templates,functions,languages,libraries}
+mkdir -p data/{uploads,cache,logs,docs}
