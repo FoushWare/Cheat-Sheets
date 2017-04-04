@@ -84,6 +84,19 @@ Create directories:
 
 [root@master ~]# mkdir abeer\ hosni
 
+//making multiple directories within directory to structure your project :)
+
+mkdir layout includes data
+mkdir /layout/{css,images,js,fonts}
+mkdir /includes/{templates,functions,languages,libraries}
+mkdir /data/{uploads,cache,logs,docs}
+
+mkdir -p /Admin/{layout,includes,data}
+mkdir /layout/{css,images,js,fonts}
+mkdir /includes/{templates,functions,languages,libraries}
+mkdir /data/{uploads,cache,logs,docs}
+
+
 ========================================
 
 Copy files and diretories:
@@ -196,5 +209,27 @@ best wishes:
 
 Abeer :)
 
-******************************************************************************************
+*****************************************************************Lazy foush*************************
+some lazy navagation in terminal                                                                              
+
+ctrl+a => go to the begining of the line terminal
+ctrl+e => go to the end of the line in terminal 
+ctrl+b =>Move back one character 
+ctrl+f  =>Move Forward one characher 
+ctrl+d  =>Delete current character
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,21 @@
+How to access a usb flash drive from the terminal? (How can I mount a flash drive manually?)
+
+
+1. Find what the drive is called
+
+You'll need to know what the drive is called to mount it. To do that fire off:
+
+sudo fdisk -l
+You're looking for a partition that should look something like: /dev/sdb1. Remember what it's called.
+
+2. Create a mount point
+
+Create a new directory in /media so you can mount the drive onto the filesystem:
+
+sudo  mkdir /media/usb
+3. Mount!
+
+sudo mount /dev/sdb1 /media/usb
+When you're done, just fire off:
+
+sudo umount /media/usb
