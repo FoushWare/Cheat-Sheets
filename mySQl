@@ -1,0 +1,210 @@
+1-install mySQl ==>
+
+sudo apt-get install mysql-server
+
+2-How to remove mySQL completely form the system = =>
+
+sudo apt-get purge mysql-server mysql-client mysql-common mysql-server-core-5.5 mysql-client-core-5.5
+sudo rm -rf /etc/mysql /var/lib/mysql
+sudo apt-get autoremove
+sudo apt-get autoclean
+
+--------------------------------------------------
+
+login to mysql =>
+				$mysql -u root -p     then type the password default is :root
+
+
+---------------------------------CREATE DATABASE------------
+CREATE DATABASE fouad;
+
+---------------------------------SWITCH TO THE DATABASE------------
+USE fouad;
+
+----------------------------------CREATE TABLE----------------------------
+CREATE TABLE [IF NOT EXISTS] fouad_test (list_of_table_columns) [engine=database_engine]
+
+-----------------------------------Show columns in tabel-------------------------
+show columns in fouad_test;
+------------------------------------INSERT DATA in THE TABLE_____________
+INSERT INTO table_name (field1, field2, ...) VALUES (value1, value2, ...);
+
+--------------------------------------------show the table after insertion_--------------
+SELECT * FROM TABLENAME;
+
+----------------------DELETE TABLE---------------------
+
+DROP TABLE  TABLE_name;
+
+----------------------Empty the table----------
+TRUNCATE [table-name] ;
+
+TRUNCATE students;
+
+
+
+------------------------view our current table--------------
+SHOW tables;
+
+
+-----------------------------show all databases like database name -----------
+SHOW DATABASES LIKE Foush;
+
+_____________________________________________SHow the structure of the table _____________
+1-DESCRIBE [TABLE_NAME] ;
+
+DESCRIBE Foush;
+
+2-SHOW COLUMNS FROM [table_name] ;
+
+SHOW COLUMNS FROM student;
+
+3-SHOW FIELDS FROM [table-name] ;
+
+SHOW FIELDS FROM student ;
+------------------------------------------------------------------Show table status-----------------
+SHOW TABLE STATUS;                   => it will give us everything about the tables in the selected database
+
+
+
+-------------------------------------show the code that i creae the table with it ------------------
+
+SHOW CREATE TABLE [table-name] ;
+
+SHOW CREAT TABLE student;
+
+------------------------------------------------------------------Rename the table ---------------------
+RENAME TABLE [old-name] TO [new-name];
+
+
+=> if i want to rename more thant one-table 
+
+RENAME TABLE [old-name-1] TO [new-name-1],[old-name-2] [new-name-2];
+
+
+----------------------------------Change storage engine of the table -------------
+
+ALTER TABLE [table-name] ENGINE =[the required-engine]
+
+
+-----------------------------------------------------
+
+
+------------------ALTER ----------------it can manipulate the table adding -deleting columns , change data-type,
+
+ALTER TABLE student ADD username varchar(255);        --> this will add the username field at the end of the table by default
+
+ALTER TABLE student ADD username varchar(255) AFTER name;   --> this will add this field after the name field
+
+ALTER TABLE student ADD Gender varchar(255) FIRST;    --> this will add this field at the begining of the table
+
+
+ALTER TABLE student DROP  [column-name];             --> this will drop the column
+
+
+---------------Alter change--
+change the place of the column [move the column]
+
+ALTER TABLE [table-name] CHANGE username username VARCHAR(255) AFTER email;
+
+------------------Alter  modify the data-type
+
+ALTER TABLE [table-name] CHANGE username username CHAR(55);
+
+we can change the data-type oR we can change the data-type and name
+
+ALTER TABLE [table-name] CHANGE username Fouad CHAR(55);
+
+--------------------------Rename TABLE with alter---------------------
+ALTER TABLE  new1 RENAME new2
+
+
+---------------------------ALTER {modify and change}-----------------
+we can use modify and change at the same time with alter
+
+ALTER TABLE students MODIFY username username char(50) ,CHANGE id userid int(11);
+
+-------------------------Alter {convert to specific  Charset}-----------
+
+ALTER TABLE students CONVERT TO CHARACTER SET utf8;
+
+
+
+---------------------------Constraines-----------
+we force the user not to  enter some values like NULL  ==>
+
+we can but this contraines while creating the table OR we can alter it after the creation
+
+ALTER TABLE students MODIFY username VARCHAR(255) NOT NULL;
+
+------constrains----{unique}-------
+
+ALTER TABLE  [table-name] ADD UNIQUE[field-To-change];
+
+ALTER TABLE student ADD UNIQUE(username);
+
+===How to cancle this unique-------
+
+ALTER TABLE  [table-name] DROP INDEX[field-To-change];
+
+ALTER TABLE students DROP INDEX username;
+
+-------contrains----{primary-key}-----
+NOTE -> 
+
+There is only primary key for the table but we can use unique for any column
+
+
+=============While creating the table========
+
+
+CREATE TABLE `classes` (
+                     `cid` int(11) NOT NULL PRIMARY KEY
+                          ,cname varchar(255)    );
+
+
+
+CREATE TABLE `classes` (
+                     `cid` int(11) NOT NULL
+                      ,cname VARCHAR(255)
+                      ,PRIMARY KEY (cid)
+                      );
+
+=================AFTER CREATING THE TABLE ==========
+
+ALTER TABLE Students ADD PRIMARY KEY(id);
+
+>>>>>>>>>>>>>>>>DROP the Primay key>>>>>>>>
+
+ALTER TABLE Students DROP PRIMARY KEY;
+
+
+Note :primary Key doesn't accept NULL
+
+
+---------constrains--------------Foreign key------------------------
+
+it's a way to relate the tables with each other  (i.e in Amazon there is a table for clients and tables for orders  in way there is a relation between the clients and the order so it's not good that there is an order for client that not in the datatbases)
+
+1-first we create table for clients
+
+CREATE TABLE clients ( id INT NOT NULL,
+                        username VARCHAR(255) UNIQUE,
+                        email VARCHAR(255) UNIQUE,
+                        PRIMARY KEY (id)  )ENGINE=INNODB;
+
+2-second create table for orders and make a relation between the client and the order that he/she order
+
+CREATE TABLE orders( order_id INT NOT NULL,
+                    price VARCHAR(255),
+                    client_id INT NOT NULL,
+                    PRIMARY KEY(order_id),
+                    FOREIGN KEY(client_id) REFERENCES clients(id)  )ENGINE=INNODB;
+
+
+
+
+
+
+
+
