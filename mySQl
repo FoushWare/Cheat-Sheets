@@ -201,7 +201,123 @@ CREATE TABLE orders( order_id INT NOT NULL,
                     PRIMARY KEY(order_id),
                     FOREIGN KEY(client_id) REFERENCES clients(id)  )ENGINE=INNODB;
 
+------------foreign key-------UPDATE-DELETE-----
 
+For foreign key  -> there are many modes for the relation between the parent and the children
+
+CASCADE=> it mean when i delete the client ,order related to it will be deleted
+
+RESTRICT=> it mean you have to delete the orders related to clients before deleteing the client
+
+
+-------------foreign key---HOW to update the mode of the foreign key---
+
+NOTE all of our playing will be in the child table 
+
+ALTER TABLE 'orders' DROP FOREIGN KEY 'ordering'; ALTER TABLE 'orders' ADD CONSTRAINT 'ordering' FOREIGN KEY('client_id') REFERENCES 'Elzero'.'clients('id')' ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+-----------foreign key -------TAbLEs  Relations--------
+
+
+-> Many To Many         
+
+
+Any client(Foush,sherif,Sediak,Badawy) can contribute in many shops (FACEBOOK,Twitter,LINKEDIN)
+
+==>FIRST TABLE      (clients)
+CREATE TABLE clients(
+  client_id INT NOT NULL PRIMARY KEY,
+  username VARCHAR(255),
+  email VARCHAR(255)
+    )ENGINE=INNODB;
+
+
+
+
+
+
+==>SECOND TABLE    (shops)
+
+    CREATE TABLE shops(
+    shop_id INT NOT NULL PRIMARY KEY,
+    name VARCHAR(255)
+            )ENGINE=INNODB;
+
+
+
+
+
+
+
+CREATE TABLE shopmember(
+     client INT NOT NULL,
+     shop INT NOT NULL,
+     PRIMARY KEY (client,shop),
+     CONSTRAINT cons_cleints
+        FOREIGN KEY(client)REFERNCES clients(id)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+
+    CONSTRAINT cons_shop
+        FOREIGN KEY (shop)REFERENCES shops(shop_id)
+        ON DELETE CASCADE ON UPDATE CASCADE
+    );
+
+
+
+--------------------------------functions-------------string
+==========================================
+=====LEFT()===MID()===RIGHT()====
+===========================================
+MySQL String Functions Syntax
+
+LEFT(string,Length);
+
+to get the first length of the string
+
+RIGHT(string,Length);
+
+to get the last length of the string
+
+MID(string,position,length);
+
+Position :-> this mean the starting char where to start 
+length   :->this mean the length to go from start 
+
+-------------------------------functions----------------string
+
+==========================================
+=====LENGTH()====CHAR_LENGTH()
+===========================================
+
+
+LENGTH()         => get the length of the text based on how many byes does it take in the databases
+CHAR_LENGTH()    =>get the length of the text based on it's represented as char 
+
+(i.e)           length($)  => it will give 2
+(i.e)           char_length($)  => it will give 1
+
+------------------------------functions---------------string
+
+==========================
+REPEAT()=== REPLACE()=== REVERSE()
+============================
+REPEAT(string,number of Repeats)
+REPLACE(string,from,to)
+REVERSE(string)
+
+------------------------------functions---------------string
+
+==========================
+CONCAT(string,string,string)
+CONCAT_WS(separator,string,string2)
+
+------------------------------functions---------------string
+
+TRIM(MEthod[LEADING |TRAILING|BOTH] [REMOVE STRiNG] FROM[string])
+
+-MEthods are optional if not written both will used 
+-Remove is optional   if not written it will remove spaces by default
 
 
 
