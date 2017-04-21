@@ -31,7 +31,7 @@ Opens a tab, editing the current file-name, % is the name of the current file.
 
 gt==>Go to next tab.
 gT==>Go to last tab.
---------------------------------------------auto save the file------- 
+--------------------------------------------/auto save the file------- 
 type in vim this command 
 :autocmd CursorHold,CursorHoldI * update
 -------------------------- Line_moves-------------------------------------------
@@ -87,6 +87,35 @@ Then go to line 250 (with :250 in ex mode) and hit `a (backtick, then a) to retu
 
 
 
+////////////////////vim Sex////////////////
+split the screen and /open file explorer in one of them
+
+------------Good video about using spf13 and download pluigins----------
+https://www.youtube.com/watch?v=92oOeFl21wE
+
+for 
+	tagbar pluigin => to use it type    ,tt 
+
+	it list all variables and function in the file ,so if we are editting large file we can easly viual everthing  
+
+	ctrl+w+l => to go to the right panel 
+	p => hightlight the variable 
+	enter => to go to the selected variable or function
+
+
+	AUTOCOMPLETE  pluigin => CTRL+N   to get suggestions from the file 
+
+
+----------------------------------------------------------------------------------
+
+To edit all files in the current folder, use:
+	vim *
+
+To edit all files in tabs, use:
+	vim -p *
+
+To edit all files in horizontally split windows, use:
+	vim -o *
 
 
 
