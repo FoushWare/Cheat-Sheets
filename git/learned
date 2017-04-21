@@ -129,6 +129,8 @@ If the GitHub repo has seen new commits pushed to it, while you were working loc
 $ git pull --rebase
 $ git push
 
+==sometimes you add files before and you didn't commit it you should add them and commit them 
+
 
 
 
