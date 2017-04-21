@@ -19,8 +19,9 @@ login to mysql =>
 CREATE DATABASE fouad;
 
 ---------------------------------SWITCH TO THE DATABASE------------
-USE fouad;
+USE fouad;aiiii
 
+iijklj
 ----------------------------------CREATE TABLE----------------------------
 CREATE TABLE [IF NOT EXISTS] fouad_test (list_of_table_columns) [engine=database_engine]
 
@@ -318,9 +319,4 @@ TRIM(MEthod[LEADING |TRAILING|BOTH] [REMOVE STRiNG] FROM[string])
 
 -MEthods are optional if not written both will used 
 -Remove is optional   if not written it will remove spaces by default
-
-
-
-
-
 
