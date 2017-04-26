@@ -31,6 +31,13 @@ Opens a tab, editing the current file-name, % is the name of the current file.
 
 gt==>Go to next tab.
 gT==>Go to last tab.
+
+tabs   =>list all tabs including their display window
+(i)gt  =>go to tabe in position i
+
+Ctrl+pgDn => go to the next tabe
+Ctrl+pguP => go to the previous tabe
+
 --------------------------------------------/auto save the file------- 
 type in vim this command 
 :autocmd CursorHold,CursorHoldI * update
