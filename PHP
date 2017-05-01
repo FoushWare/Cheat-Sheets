@@ -2,3 +2,10 @@ make a soft link of htdocs  ==> i make this note cause i'm lazy i don't want to 
 
 ln -s    [SOURCE] /opt/lampp/htdocs/   [Destination]/home/tom/Desktop/
 
+
+
+
+------------------------------------------------------
+Errors ->
+
+		unexpected end of file php ==> this mean you are missing closing brace( } )
