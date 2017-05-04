@@ -1,0 +1,6 @@
+first -> unstall git 
+sudo apt-get purge git; sudo apt-get autoremove;
+--------------------------------
+second-> make the script then test it 
+
+		--first : learn bash scripting
