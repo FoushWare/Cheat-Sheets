@@ -1,0 +1,13 @@
+first thing first => bash is a text shell this translate the commands i pass to it and start another programs for me
+
+It has two Modes --
+                    --interactive Mode: when it give Me this prompit when opening the terminal [ $ ] waitting for enter command
+                    --Non-interactive Mode: when it's executing command from file that has this commands sequentially this called [script]
+
+
+////=> i can type  [this hashbang]         => #!/usr/bin/env bash  =>rather than
+                                             #!/bin/bash
+
+i can use it if i didn't know the path of the bash interpreter
+
+[env] is the program that know all the programs paths 
