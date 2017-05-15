@@ -1,0 +1,47 @@
+first thing first => bash is a text shell this translate the commands i pass to it and start another programs for me
+
+It has two Modes --
+                    --interactive Mode: when it give Me this prompit when opening the terminal [ $ ] waitting for enter command
+                    --Non-interactive Mode: when it's executing command from file that has this commands sequentially this called [script]
+
+
+////=> i can type  [this hashbang]         => #!/usr/bin/env bash  =>rather than
+                                             #!/bin/bash
+
+i can use it if i didn't know the path of the bash interpreter
+
+[env] is the program that know all the programs paths
+
+
+
+
+
+
+
+
+While learning a bit about bash, I come to see four types of ways of working with if statements:
+
+Single Parenthesis - ( ... )
+Double Parenthesis - (( ... ))
+Single Square Bracket - [ ... ]
+Double Square Brackets - [[ ... ]]
+What is the difference between Parenthesis and Square Brackets in bash
+
+Answer:
+The tests you had listed :
+
+Single Parenthesis - ( ... ) is creating a subshell
+Double Parenthesis - (( ... )) is for arithmetic operation
+Single Square Bracket - [ ... ] is the syntax for the POSIX test **we can use it in condtioning like ones that have && ||
+Double Square Brackets - [[ ... ]] is the syntax for bash conditional expressions (similar to test but more powerful)
+
+when using bc program for floating-point with bash **with pipline**
+
+you can use subshell like that
+
+multiply=$(echo"a*b" | bc -l)           OR rather than pipleing you can use redirection
+
+answer=$(bc <<< "scale=2;$var1/$var2")
+
+
+ 
