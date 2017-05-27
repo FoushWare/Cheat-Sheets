@@ -113,7 +113,7 @@ for
 	AUTOCOMPLETE  pluigin => CTRL+N   to get suggestions from the file 
 
 
-----------------------------------------------------------------------------------
+---------------------------------------files-------------------------------------------
 
 To edit all files in the current folder, use:
 	vim *
@@ -125,8 +125,11 @@ To edit all files in horizontally split windows, use:
 	vim -o *
 
 
+---------------------------------------
+parenthesis -braces
 
-
+%   => to move to the (end or start of braces )
+v % => to move to the (end or start of braces ) and select the between 
 
 
 
