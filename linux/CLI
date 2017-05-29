@@ -1,0 +1,4 @@
+grep
+-------
+
+grep -c string filename   => to count how many repeation of word string in filename
