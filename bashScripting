@@ -43,5 +43,37 @@ multiply=$(echo"a*b" | bc -l)           OR rather than pipleing you can use redi
 
 answer=$(bc <<< "scale=2;$var1/$var2")
 
+---------------------------------------------------------
+
+Typing variables : declare or typeset 
+
+objective of it => permit modifying the properties of variable 
+
+it's like const in (c prorgramming)
+
+
+
+
+-----------------------------------------------------------------
+        problems                 And                    solution 
+
+p0: variable declaration - command not found ?
+
+number = 3
+
+illustration:=>
+
+You cannot have spaces around your '=' sign.
+
+When you write:
+
+STR = "foo"
+bash tries to run a command named STR with 2 arguments (the strings '=' and 'foo')
+
+When you write:
+
+STR =foo
+bash tries to run a command named STR with 1 argument (the string '=foo')
+
 
  
