@@ -1,0 +1,5 @@
+#!/bin/bash
+
+declare -a Unix=("debian" "ubutnu" "Suse" "foush :)")
+
+echo  ${#Unix[@]}

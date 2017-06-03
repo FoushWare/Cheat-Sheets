@@ -1,0 +1,9 @@
+#!/bin/bash
+
+Unix[0]="Debian"
+Unix[1]="Red hat"
+Unix[2]="Ubuntu"
+
+echo ${Unix[2]}
+
+

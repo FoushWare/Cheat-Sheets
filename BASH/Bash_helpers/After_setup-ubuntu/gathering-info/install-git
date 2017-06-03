@@ -1,0 +1,26 @@
+==> install git
+
+
+sudo apt-get update
+sudo apt-get install git
+---------------------------
+==>check if it exitsts
+
+git --version
+------------------------
+==>where it installed
+
+which git
+------------------------
+
+==>configure git
+
+git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+
+
+-----------------
+==>See the configurations
+
+git config --list
+

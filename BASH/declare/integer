@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#first example you can  unminimize it to see it  :)
+# declare  -i number number=3 echo "number= $number" number=five echo "number= $number" */
+
+
+#second example with arithmetic operation
+
+n=6/3
+echo "n= $n"      #this with echo    6/3
+
+declare -i  s
+
+s=6/3
+
+echo "s = $s"
+
+

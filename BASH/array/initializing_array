@@ -1,0 +1,5 @@
+#!/bin/bash
+
+declare -a  Unix=('Debian' "red hat" 'suse' 'fedora')
+
+echo ${Unix[2]}
