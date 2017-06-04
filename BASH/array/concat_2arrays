@@ -1,0 +1,6 @@
+#!/bin/bash
+Unix=('Debian' 'ubutnu' 'linuxmint' 'Suse' 'mat')
+Shell=('bash' 'csh' 'zsh')
+UnixShell=("${Unix[@]}" "${Shell[@]}")
+echo ${UnixShell[@]}
+echo ${#UnixShell[@]}

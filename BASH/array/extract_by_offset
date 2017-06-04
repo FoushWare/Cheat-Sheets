@@ -1,0 +1,5 @@
+#!/bin/bash
+
+declare -a Unix=( "ubutnu" "fedora" "Suse" "Red hat" "linuxmint" )
+
+echo ${Unix[@]:2:2}            #start from 2 up to 2 elements

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+Unix=('Debian' 'Red hat' 'Suse' 'linxMint')
+
+linux=${Unix[@]}
+echo ${linux[@]}

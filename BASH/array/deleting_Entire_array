@@ -1,0 +1,7 @@
+#!/bin/bash
+Unix=('Debian' 'Red hat' 'ubuntu' 'Suse' 'Fedora' 'UTS' 'openLinux')
+Shell=('bash' 'csh' 'jsh' 'ksh' 'rc' 'tcsh')
+UnixShell=("${Unix[@]}"  "${Shell}")
+unset UnixShell
+
+echo ${#UnixShell[@]}

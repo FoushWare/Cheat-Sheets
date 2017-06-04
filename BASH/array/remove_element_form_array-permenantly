@@ -1,0 +1,17 @@
+#!/bin/bash
+Unix=('Debian' 'Red hat' 'Suse' 'openLinux' "LinuxMint" "fedora" 'centOs' )
+
+pos=3
+
+Unix=( ${Unix[@]:0:$pos} ${Unix[@]:$(($pos+1))} )
+
+echo ${Unix[@]}
+
+
+
+# In this example, ${Unix[@]:0:$pos} will give you 3 elements starting from 0th
+# index i.e 0,1,2 and ${Unix[@]:4} will give the elements from 4th index to the
+# last index. And merge both the above output. This is one of the workaround to
+# remove an element from an array.
+
+

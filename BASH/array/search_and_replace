@@ -1,0 +1,4 @@
+#!/bin/bash
+Unix=('Debian' "Red hat" "suse" "Fedora" "UTS" "openLinux")
+
+echo ${Unix[@]/Red hat/ubuntu}       #but this will not replace the original array

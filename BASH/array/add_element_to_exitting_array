@@ -1,0 +1,7 @@
+#!/bin/bash
+
+Unix=("Debina" 'ubutnu' 'suse' 'openLinux' 'Red hat' 'fedora')
+
+Unix=("${Unix[@]}" "AIX" "HP-UX")
+
+echo ${Unix[7]}

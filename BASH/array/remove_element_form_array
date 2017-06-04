@@ -1,0 +1,6 @@
+#!/bin/bash
+
+Unix=("Debian" "Red hat" "openLinux" "Suse" "Fedora")
+
+unset Unix[3]
+echo ${Unix[@]}      #this will print null for the value the third element
