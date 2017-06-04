@@ -131,6 +131,12 @@ parenthesis -braces
 %   => to move to the (end or start of braces )
 v % => to move to the (end or start of braces ) and select the between 
 
+------------------------start Split long line to multiline-------------------------
+
+visual the line you want then type           => gq
+
+
+------------------------End Split long line to multiline-------------------------
 
 
 
