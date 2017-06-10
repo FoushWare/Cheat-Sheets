@@ -6,10 +6,29 @@ module of docker [consists of ]
 
 ------------------------------------------
 
-sudo service docker restart ==> to restart the docker when it say to your.... docker: Cannot connect to the Docker daemon. Is the docker daemon running on this host?. 
-docker run -it fedora /bin/bash ==> to run the image of fedora if it exists locally if not it will download it from dockerhup
-docker pull -a fedora           ==> pull all images of fedora to get all version of it locally
-docker ps                       ==> to know the running docker container at the moment
-docker ps -a                    ==> to show all containers that was running
-CTRL+b+q                        ==> to leave the image and leave it running  
-docker images                   ==> to show all installed images in your host
+sudo service docker restart             ==> to restart the docker when it say to your.... docker: Cannot connect to the Docker daemon. Is the docker daemon running on this host?. 
+docker run -it fedora /bin/bash         ==> to run the image of fedora if it exists locally if not it will download it from dockerhup
+docker pull -a fedora                   ==> pull all images of fedora to get all version of it locally
+docker ps                               ==> to know the running docker container at the moment
+docker ps -a                            ==> to show all containers that was running
+CTRL+p+q                                ==> to leave the image and leave it running  
+docker images                           ==> to show all installed images in your host
+docker stop  imageId                    ==> to stop the running image container
+docker start  imageId                   ==> to start the stopped image container
+docker attach  imageId                  ==> to get into the image container
+docker info                             ==> to get information about all containers running passed etc
+docker rm      imageId                  ==> to remove a container image  (Note) you can not remove a running container just stop it first then remove     (Note ) if you remove it you can't restore it 
+docker inspect imageId                  ==> to get info about anything of the image
+docker inspect imageId | grep pid       ==> to search in inspect info and get the pid
+--------NOte--------------------------NOte----------------------Note-------------Note------
+
+you can only use one process within a container  ----Ok----
+
+but some people make image to use more than on process within the container you can get this image by using this command
+
+tom$ docker pull phusion/baseimage
+
+
+
+
+
