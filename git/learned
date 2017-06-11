@@ -139,6 +139,7 @@ You could checkout 'master' with both directories;
 git rm -r one-of-the-directories
 git commit -m "Remove duplicated directory"
 git push origin <your-git-branch> (typically 'master', but not always)
+
 Remove directory from git but NOT local
 
 As mentioned in the comments, what you usually want to do is remove this directory from git but not delete it entirely from the filesystem (local)
@@ -147,7 +148,26 @@ In that case use:
 
 git rm -r --cached myFolder
 
+---------------------------------------------------------------- Changes not staged for commit:              ?? ---------------------
+This is caused when you didn't add files to staging area before commit OR delete some files in the local 
 
+you can use this ==>		git commit -am "save my files"
+
+
+
+---------------------------------   <<<<<  gitignore     >>>>>>   ------------------
+Make the files untracked
+
+i use it for security to hide some files in github not from my local project 
+And to hide the editor building files 
+
+After Adding the file named (.gitignore)      ===> to delete this files from github
+
+before anything if you make any other changes commit it before doing the following 
+
+git rm -r --cached  .
+git add .
+git commit -m "changes in .gitignore now is working"
 
 
 
