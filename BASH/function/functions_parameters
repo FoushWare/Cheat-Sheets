@@ -1,0 +1,15 @@
+#!/bin/bash
+
+function quit {
+    exit
+}
+
+function e {
+    echo $1
+}
+
+
+e hello
+e world
+quit 
+echo foo

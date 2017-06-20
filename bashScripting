@@ -43,7 +43,7 @@ multiply=$(echo"a*b" | bc -l)           OR rather than pipleing you can use redi
 
 answer=$(bc <<< "scale=2;$var1/$var2")
 
----------------------------------------------------------
+------------------------Typing variables : (declare) or( typeset )-------- 
 
 Typing variables : declare or typeset 
 
@@ -53,9 +53,7 @@ it's like const in (c prorgramming)
 
 
 
-
------------------------------------------------------------------
-        problems                 And                    solution 
+-------------------problems--------And-----------solution------------------
 
 p0: variable declaration - command not found ?
 
@@ -75,5 +73,37 @@ When you write:
 STR =foo
 bash tries to run a command named STR with 1 argument (the string '=foo')
 
+---------------------------Array------------------------------------------
+Good tutorial :=>http://www.thegeekstuff.com/2010/06/bash-array-tutorial/
+---------------------------------------
 
- 
+
+-------------------------------functions---------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
