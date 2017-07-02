@@ -138,5 +138,30 @@ visual the line you want then type           => gq
 
 ------------------------End Split long line to multiline-------------------------
 
+ctrl+E ==> give me the tree of the project while working
+
+-----------------------autoComplete of file path------------------
+
+first thing type the first chars of the path then ===>
+
+CTRL+X   CTRL+f     => to give you the suggested files
+CTRL+n              => to move up through the entries
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
