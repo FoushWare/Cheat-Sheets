@@ -72,13 +72,44 @@ git branch <new-branch> => make a branch with the name new-branch
 Note:--
  since i've creat the new-brance it has the same code as masterbranch
 
-
- git log --graph --oneline branches (seperated by space)=> see the visual representation of the commit history 
+git log --> show all commits
+ git log --graph --oneline   => see the visual representation of the commit history 
 
 
 git show => to show you the changes in the current commit 's parent without known what actually the parent was 
 
 git branch -d branch-name => to delete the branch (note) this won't delete the branch's commits but it will delete the lable of the branch mean the branch's name 
+
+>>START Delete branch locally and from the remote[Github]>>
+
+    Locally-->  git branch -d <branch name>
+    Remotely--> git push origin --delete <branch name>
+
+>>End Delete branch locally and from the remote[Github]>>
+
+
+>>START OF move through branches 
+
+git checkout <branch name>
+
+>>End   OF move through branches 
+
+
+>>START OF tracking the current branch 
+
+=> after you checkout to the desired branch if you make any change it will not seen by git  and if you run $git status it will say  "Everything is up_to_date"
+
+solution ==> start tracking your branch     
+
+git branch branch_name -u  remote_name/branch_name
+
+
+>>End OF tracking the current branch 
+
+
+
+
+
 
 00000000000000000000000000 git merge 0000000000000000
 
