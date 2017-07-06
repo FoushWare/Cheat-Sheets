@@ -218,7 +218,8 @@ ctrl+b =>Move back one character
 ctrl+f  =>Move Forward one characher 
 ctrl+d  =>Delete current character
 
-
+---------------------------------know info about stack size and some inf of system-----
+ulimit -a 
 
 
 
