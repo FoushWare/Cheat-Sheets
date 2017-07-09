@@ -159,6 +159,12 @@ CTRL+n              => to move up through the entries
 
 ----------------------- End autoComplete of file path------------------
 
+---------------------start Go to specific line before enter the file --------------
+
+vi +lineNumber fileName
+
+
+---------------------End Go to specific line before enter the file --------------
 
 
 
