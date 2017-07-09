@@ -163,6 +163,7 @@ CTRL+n              => to move up through the entries
 
 vi +lineNumber fileName
 
+vi +anyword   fileName         make you go to the specific word
 
 ---------------------End Go to specific line before enter the file --------------
 
