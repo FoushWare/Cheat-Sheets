@@ -1,3 +1,16 @@
+Why do people disable javascript?
+
+for security issue cause it's compatible for every engine it's an engine built-in 
+
+and every browser have it's javascript engine .it's not mantained by one company like java 
+
+so it has holes but many website won't work properly if you disable it and some won't work
+
+
+
+
+
+
 Methods that deal with strings
     ____________________________________
 1-String.substr(startpoint,numberOfCharacterToExtract)==>
