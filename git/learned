@@ -214,7 +214,24 @@ git rm -r --cached  .
 git add .
 git commit -m "changes in .gitignore now is working"
 
+------------------------------------------START wear many hats in git [work,personal] hats-----------
+-> To configure your default email address 
 
+ git config --global user.name "John Doe"
+ git config --global user.email johndoe@example.com
+
+
+-> you cd into the repository and then simply type the same command without the -–global parameter, i.e:
+
+
+ git config user.email johndoe@example.com
+ 
+ Which will override the default email address set on your machine
+ but just for that one repository. The repository wide (local) settings are stored in a file
+ called config with-in the .git folder in your repository,
+ the global settings are stored in a file called .gitconfig in your users home directory.
+
+------------------------------------------End wear many hats in git [work,personal] hats-----------
 
 
 
