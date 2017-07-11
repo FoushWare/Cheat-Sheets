@@ -84,6 +84,18 @@ Good tutorial :=>http://www.thegeekstuff.com/2010/06/bash-array-tutorial/
 
 
 
+-------------------------------End function-------------------
+
+---------------------------------Start filters with bash ----------
+filters like [cut - sort - uniq -]
+
+>>>>cut
+
+options            -c   if you deal with strings this called colums
+                   -f   if you deal with table like tsv files every cell called field
+
+
+---------------------------------End filters with bash ----------
 
 
 
