@@ -169,9 +169,36 @@ vi +anyword   fileName         make you go to the specific word
 
 
 
+----basic search and replace-----------
+Vim provides the :s (substitute) command for search and replace;
+this tip shows examples of how to substitute. On some systems,
+gvim has Find and Replace on the Edit menu (:help :promptrepl),
+however it is easier to use the :s command due to its command line history and ability
+to insert text (for example, the word under the cursor) into the search or replace fields.
 
+The :substitute command searches for a text pattern, and replaces it with a text string. There are many options, but these are what you probably want:
 
+:%s/foo/bar/g
+Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
+:s/foo/bar/g
+Find each occurrence of 'foo' (in the current line only), and replace it with 'bar'.
+:%s/foo/bar/gc
+Change each 'foo' to 'bar', but ask for confirmation first.
+:%s/\<foo\>/bar/gc
+Change only whole words exactly matching 'foo' to 'bar'; ask for confirmation.
+:%s/foo/bar/gci
+Change each 'foo' (case insensitive due to the i flag) to 'bar'; ask for confirmation.
+:%s/foo\c/bar/gc is the same because \c makes the search case insensitive.
+This may be wanted after using :set noignorecase to make searches case sensitive (the default).
+:%s/foo/bar/gcI
+Change each 'foo' (case sensitive due to the I flag) to 'bar'; ask for confirmation.
+:%s/foo\C/bar/gc is the same because \C makes the search case sensitive.
+This may be wanted after using :set ignorecase to make searches case insensitive.
+The g flag means global – each occurrence in the line is changed, rather than just the first. This tip assumes the default setting for the 'gdefault' and 'edcompatible' option (off), which requires that the g flag be included in %s///g to perform a global substitute. Using :set gdefault creates confusion because then %s/// is global, whereas %s///g is not (that is, g reverses its meaning).
 
+When using the c flag, you need to confirm for each match what to do. Vim will output something like: replace with foobar (y/n/a/q/l/^E/^Y)? (where foobar is the replacement part of the :s/.../.../ command. You can type y which means to substitute this match, n to skip this match, a to substitute this and all remaining matches ("all" remaining matches), q to quit the command, l to substitute this match and quit (think of "last"), ^E to scroll the screen up by holding the Ctrl key and pressing E and ^Y to scroll the screen down by holding the Ctrl key and pressing Y. However, the last two choices are only available, if your Vim is a normal, big or huge built or the insert_expand feature was enabled at compile time (look for +insert_expand in the output of :version).
+
+Also when using the c flag, Vim will jump to the first match it finds starting from the top of the buffer and prompt you for confirmation to perform replacement on that match. Vim applies the IncSearch highlight group to the matched text to give you a visual cue as to which match it is operating on (set to reverse by default for all three term types as of Vim 7.3). Additionally, if more than one match is found and you have search highlighting enabled with :set hlsearch, Vim highlights the remaining matches with the Search highlight group. If you do use search highlighting, you should make sure that these two highlight groups are visually distinct or you won't be able to easily tell which match Vim is prompting you to substitute.)
 
 
 
