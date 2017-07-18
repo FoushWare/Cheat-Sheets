@@ -1,0 +1,14 @@
+/* This day: Tuesday 18/7/2016
+*pg 38:39
+*Title:from commands to script
+*/
+
+What i have learned?
+
+before typing bash script => first test it in the CLI and make the output redirect to
+file to see it 
+
+then use fc to get the command you type in file where i can manipulate it
+and make it executable
+
+BUT others used to type it in file first then test it 
