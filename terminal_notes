@@ -227,8 +227,10 @@ ctrl+p => up arrow
 ctrl+n => down arrow
 
 
+--------------------------------------FC for reExecute commands --written in terminal to use them in executable file---------
+fc -e [Editor i.e vi]  => it will get you the last command you type  file
 
-
+i can use it when typing bash commands ...first test the command in the terminal then put it in a file
 
 
 
