@@ -1,3 +1,6 @@
 Using FakeVim
 ===============
 use can escape the vim mode  by pressing ctrl+V ,Ctrl+V      and then press CTRL+R
+
+=======
+Refactor the code -> ctrl+a then ctrl+i
