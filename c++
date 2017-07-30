@@ -1,3 +1,5 @@
+These question are rolling in my head?
+
 Q1._   What is the use of “using namespace std”? 
 
 using: You are going to use it
@@ -8,3 +10,8 @@ After you write this instruction, if the compiler sees string it will know that 
 If you don't write it, when the compiler sees string or vector it will not know what you are refering to. You will need to explicitly tell it std::string or std::vector, and if you don't, you will get a compile error.
 
 
+Q2:What is the benefit to define member function out side the class
+    with the help of scope resolution operator?
+
+    Link1:https://www.quora.com/What-is-the-benefit-to-define-member-function-out-side-the-class-with-the-help-of-scope-resolution-operator
+    link2:http://www.cplusplus.com/articles/2LywvCM9/
