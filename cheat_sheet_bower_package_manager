@@ -10,5 +10,9 @@ i.e (bower install bootstrap)  it also install jquery as dependence for it
 bower init       -> to make json file to put dependences and other thing to distribute them for other developers
 
 
+uninstall <library name>               -> to uninstall library if i download it and you made a mistake and you want to install different library
+
+
+
 
 
