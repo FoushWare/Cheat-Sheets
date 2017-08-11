@@ -1,0 +1,14 @@
+bower search  <library name>                    -> search for library to download it
+
+i.e(bower search bootstrap)
+
+bower install <library name>                    ->to install library it also install dependencies
+
+i.e (bower install bootstrap)  it also install jquery as dependence for it 
+
+
+bower init       -> to make json file to put dependences and other thing to distribute them for other developers
+
+
+
+
