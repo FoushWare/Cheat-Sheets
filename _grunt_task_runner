@@ -1,0 +1,6 @@
+Use grunt with project =>
+
+What y need  is 
+
+-user this commend  npm init   -> to make package.json file contain all config of your project
+-make file name GruntFile.json to put in him config of grunt to run tasks automatic
