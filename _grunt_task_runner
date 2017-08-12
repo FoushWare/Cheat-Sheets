@@ -4,3 +4,53 @@ What y need  is
 
 -user this commend  npm init   -> to make package.json file contain all config of your project
 -make file name GruntFile.json to put in him config of grunt to run tasks automatic
+
+
+This file consists of three parts  and main part 
+
+main part is the wrapper function which called  
+
+        module.exports=function(grunt){
+        //Do grunt related things here
+        };
+
+        //the first part is project configuration
+        //the second part is load the plugins 
+        //the third part  is Default tasks
+
+
+**The code like that   for concatnate files in one file 
+
+module.exports= function(grunt){
+    // Project configuration.
+        grunt.initConfig({
+            pkg:grunt.file.readJSON('package.json'),
+            concat:{
+                        options:{
+                                separator:"\n\n"
+                        },
+                        dist:{
+                            src:['js/main.js','js/controller.js'],
+                            dest:'bin/<%= pkg.name %>.js'
+                        }
+                   }
+
+            });
+         //load the plugins
+            grunt.loadNpmTasks('grunt-contrib-concat');
+        //Tasks
+            //this is what i will tell grunt to do : i.e(grunt concat)
+            grunt.registerTask('default',['concat']);
+
+}
+
+
+NOTE:
+    you need to add devDependences to your project  by using this command
+    nmp insatll grunt-contrib-concat --save-deb
+
+
+
+
+
+
