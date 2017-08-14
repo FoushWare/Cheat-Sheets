@@ -15,3 +15,5 @@ Q2:What is the benefit to define member function out side the class
 
     Link1:https://www.quora.com/What-is-the-benefit-to-define-member-function-out-side-the-class-with-the-help-of-scope-resolution-operator
     link2:http://www.cplusplus.com/articles/2LywvCM9/
+Q3:how to organize header files?
+links:http://www.cplusplus.com/forum/articles/10627/
