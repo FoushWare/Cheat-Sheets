@@ -99,6 +99,16 @@ options            -c   if you deal with strings this called colums
 
 
 
+----faults with if   and else ----
+
+you should use this 
+
+if [ conditions  ]
+# ^ ^          ^
+
+
+
+and with else       ->if you want to write comment at the same line leave a space after else           else# -> error 
 
 
 
@@ -108,6 +118,20 @@ options            -c   if you deal with strings this called colums
 
 
 
+
+-----------------------start create function in .bashrc and use it as command in terminal---------
+
+function function_name(){
+//write what you want 
+}
+
+export -f function_name        #to use it outside in any script or terminal
+
+#update .bashrc    ->    source ~/.bashrc
+
+
+
+-----------------------End create function in .bashrc and use it as command in terminal---------
 
 
 
