@@ -1,9 +1,13 @@
+============================================================
+week one
+
+
 Use grunt with project =>
 
 What y need  is 
 
--user this commend  npm init   -> to make package.json file contain all config of your project
--make file name GruntFile.json to put in him config of grunt to run tasks automatic
+1-user this commend  npm init   -> to make package.json file contain all config of your project
+2-make file name GruntFile.json to put in him config of grunt to run tasks automatic
 
 
 This file consists of three parts  and main part 
@@ -33,7 +37,16 @@ module.exports= function(grunt){
                             src:['js/main.js','js/controller.js'],
                             dest:'bin/<%= pkg.name %>.js'
                         }
-                   }
+                   },//concat
+            uglify:{
+                my_target:{
+                    files:{
+                    'source':['Destination']
+
+                    }
+                }
+                
+            }//uglify
 
             });
          //load the plugins
@@ -47,9 +60,24 @@ module.exports= function(grunt){
 
 NOTE:
     you need to add devDependences to your project  by using this command
-    nmp insatll grunt-contrib-concat --save-deb
+    nmp install grunt --save-dev
+    nmp insatll grunt-contrib-concat --save-dev
 
+=========================================================
 
+-------------------------------------------------------------------------
+NOTE: second_week
+
+1-
+you should  separate  each plugin i.e(uglify,concat,...) with   comma (,)
+to not throw syntax error to your face
+
+2-
+for the Tasks part i can run custom command to run specific plugin 
+    grunt.registerTask('concatAndMinify',['concat','uglify']);
+
+    so when i run  $grunt concatAndMinify      ->it will do both concat and uglify
+----------------------------------------------------------------------------
 
 
 
