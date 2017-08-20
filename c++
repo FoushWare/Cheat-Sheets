@@ -17,3 +17,25 @@ Q2:What is the benefit to define member function out side the class
     link2:http://www.cplusplus.com/articles/2LywvCM9/
 Q3:how to organize header files?
 links:http://www.cplusplus.com/forum/articles/10627/
+
+
+Q4:How to get iterator to the element in vector with the address of returned vector?
+
+    i.e   if i want to delete element
+    erase(vector.begin+pointer_to_address_returned - vector.data())
+
+data() -> return the first element inserted  it's like   front()  but data() is valid even
+if the container is empty
+
+
+Q5:Multiply two integers each of which stored as string?
+    "3" -> convert it to int       "3"-"0"
+
+link
+https://stackoverflow.com/questions/15598698/why-does-subtracting-0-in-c-result-in-the-number-that-the-char-is-representing
+
+
+
+
+
+
