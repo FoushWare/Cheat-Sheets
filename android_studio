@@ -12,4 +12,6 @@ ctrl+alt+B     => Go to implemention
 
 stop:=> go to super Method
 
+Note : if the file get reddish color it's not added to the repo of gitub
+
 
