@@ -14,4 +14,32 @@ stop:=> go to super Method
 
 Note : if the file get reddish color it's not added to the repo of gitub
 
+------------------------------------------------------
+
+                                   ==>  XML ==>
+Make  ||TextView||  scrollable
+
+
+<ScrollView
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+                android:fillViewport="true"
+                    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
