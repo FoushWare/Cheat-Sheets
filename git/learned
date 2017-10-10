@@ -257,6 +257,96 @@ to a branch—it points directly to a commit. This is called a “detached HEAD�
 
 
 
+==========================================================================================================================================================================================
+
+                                                    Tutorial  To my teammate      [final project OTG STORE] 
+
+
+--->>  Beginner              (first session)
+
+Content of this session
+
+-Create a Git repository
+-Copy your Git repository and add files 
+-pull changes from your Git repository 
+-Use a Git branch to merge a file
+
+**intro
+    What is a git repository?
+         Virtual storage of your project. It allows you to save versions of your code,
+         which you can access when needed
+
+
+**illustration 
+
+    **Create/add a Git repository &&  add files && commit changes 
+
+
+            git init  =>  make subdirectory for git [initialize the project git]
+
+
+            --This configs  is for the first time using git--
+                git config user.name "someone"
+                git config user.email "someone@someplace.com"
+
+
+            git remote add github git://github.com/..  [to add reference of the repo from the cloud to your local]
+
+            git add *                       [to add add changed files to the staging area]
+            git commit -m "some init msg"   [to commit the changes to be pushed to the cloud] 
+
+            git push <remote> <my branch:cloud branch >
+                i.e (git push origin master:master)
+
+
+            if( files changed in the cloud you can get it to your local by )
+
+                git pull <remote> <my branch>
+
+
+    **Branching
+
+            1-Create a branch using the git branch command. 
+
+                $ git branch test-1
+
+            2-Check out the branch you just created using the git checkout command.
+
+                $ git checkout test-1
+                    
+            3-List the branches you have locally using the git branch command.
+
+                $ git branch
+
+            4-Push the branch and change using the git push branch command.
+
+                $ git push origin test-1
+
+
+
+
+Assignment for my teammates
+
+read this article with it's  implemention
+https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
+
+
+------------------------------------------------------------------------------
+
+
+
+
+
+
+    
+
+
+   
+
+
+
+
+
 
 
 
