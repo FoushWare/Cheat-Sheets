@@ -1,0 +1,12 @@
+-> create project
+
+composer create-project --prefer-dist laravel/laravel <projectName>
+
+
+-> run the server
+ php artisan serve
+
+ ->make controller 
+    php artisan  make:controller <controller_name>
+
+
