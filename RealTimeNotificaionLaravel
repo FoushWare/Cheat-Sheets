@@ -1,0 +1,195 @@
+CheckList procedure  
+
+1-Create account in StreamLab 
+2-setup the streamlab package from github
+3-go to stream lab acccount and get the server key and token then put them in your project
+4-Migrate the tables to the DB
+5-Run php artisan make:auth   
+
+this create  these directories
+
+layouts:
+	app.blade.php  
+					-> This contains menu that has [login|register] -> to the guest 
+					->and [Logout] to the user 
+
+auth: 
+
+
+				
+
+--> to aut user for my website by Make all job of [login|register]
+
+
+
+
+
+
+6-Make route in the web.php route
+
+Route::resource('post','PostController');
+
+
+7-Make the controller 
+
+php artisan make:controller PostController -r 
+
+
+8-Make the Model 
+
+php artisan make:model Post
+
+
+9-Make the table in phpMyadmin
+
+ table [post] {id int,title varchar(200),body text,view int ,created_at timestamp,updated_at timestamp}
+
+
+
+
+10-Make two views   {one:for create a post,Two:for show all posts}
+11- Make the laravel notification first then second make it in RealTime
+
+php artisan notifications:table
+
+php artisan migrate
+
+===========================================stop here
+
+12-Make notificaion Class 
+
+php artisan make:notification AddPost
+
+13-open app/Notificaions 
+
+
+a)i wanted to proccede notifications throuh database not Email so i'll change the function via to function with database
+
+return ['database']
+
+b) inject Post Model to the constructor of this class and Use it in the function called toArray
+
+
+return [
+			'data'=>'We Have New Post' .$this->post->title'."<br> Added By " . auth()->user()->name
+
+];
+
+
+
+
+c)Go to store() funciton in PostController and when   $post->save   Get all users
+
+
+
+$user=User::all();
+Notification:send($user,new AddPost($post));                   ->this will add notificaion in the notificaion table in DB
+
+
+
+
+
+
+13-Go To app.blade.php
+
+
+		and iterate through the user notification and add it to Notification dropDownMenu
+
+
+
+@foreach(auth()->user()->notifications as $note)
+
+	<li>
+
+		<a href="">
+			{!! $note->data['data']!!}                           ->first data -> this is the field in the DB table
+		</a>									->second data -> this is the return from the file in app/Notificaions 
+
+	</li>
+
+@endforeach
+
+
+
+
+14- Mark notification as Read  -> hidde the notification that read 
+
+
+@foreach(auth()->user()->unreadNotifications as $note)
+
+	<li>
+
+		<a href="">
+			{!! $note->data['data']!!}  
+			<?php $note->markAsRead()?>
+
+		</a>									
+
+	</li>
+
+@endforeach
+
+
+
+15-show all notifications read and not read yet ...,but the unread make it with background:#e5e5e5;
+
+
+
+@foreach(auth()->user()->unreadNotifications as $note)
+
+	<li>
+
+		<a href="" class="{{$note->read_at==null?'unread':''}}">
+			{!! $note->data['data']!!}  
+			<?php $note->markAsRead()?>
+
+		</a>									
+
+	</li>
+
+@endforeach
+
+
+
+16-Connect to StreamLab with javascript check the video 07
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+In Migrate
+***********
+
+
+
+=============================================================================================
+Problem 1
+
+SQLSTATE[42000] syntax error or access violation 1071 specified key was to long 
+
+solution 1
+
+a)Go to Providers directory
+b) inside  boot() function
+c)make defaultstringlength  ->  191
+
+===============================================================================================
