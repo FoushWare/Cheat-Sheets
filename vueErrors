@@ -1,0 +1,18 @@
+===============ERROR ========================[browswerify]
+
+Vue JS 2.0 not rendering anything?
+
+
+
+===============Solution ========================
+
+Add this to package.json
+
+ // ...
+  "browser": {
+    "vue": "vue/dist/vue.common.js"
+  }
+
+
+
+****************************************************************
