@@ -1,0 +1,13 @@
+sudo netstat -plten |grep 80
+sudo kill -9 processID
+
+
+
+
+
+============
+if apach2 take port 80 
+
+And still exist after kill 
+
+sudo service apache2 stop
