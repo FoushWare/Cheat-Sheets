@@ -1,0 +1,40 @@
+:Colors     => to choose the color of the theme 
+
+
+
+**************
+    Navigation 
+
+**************
+  
+
+
+:NERDTree   => to open the NERDTree Navigation 
+
+
+
+      coc-exploler
+      ____________
+      space + e  =>  open the navigtion like NERDTree
+      space + f  =>  open floating navigtion
+
+
+      Ranger 
+      --------
+        :Ranger     => to open the Ranger and view files in the terminal without leaving nvim 
+
+
+      FZF  [Fuzzy finder]
+     ____________
+
+    :FZF              => find files with search in the current directory of the project 
+    :Rg               => find files and show the content of them 
+    :BLines           => find string in files and show them 
+    :Line             => find string in the buffer files [recently opened files ]
+
+
+
+
+
+      
+
