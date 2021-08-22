@@ -267,6 +267,8 @@ let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
 let g:ctrlp_user_command = 'dir %s /-n /b /s /a-d'  " Windows
 Check :help ctrlp-options for other options.
 
-
+====================Things to search about for vim =============
+* copy things from file with terminal 
+* Search and Replace words
 
 
