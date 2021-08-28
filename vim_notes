@@ -15,7 +15,8 @@ show numbers in vim file
 $ :set number
 $ :set nonumber -> opisite of set number
 ========
-
+run command in vim :
+`:!ls` -> this will make $ ls  -> like in bash terminal
 
 
 >>>>>>set vim as the default editor in unix>>>>>>
