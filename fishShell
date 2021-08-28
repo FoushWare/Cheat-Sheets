@@ -1,0 +1,23 @@
+Set Vi mode for fish :
+==========================
+In fish 2.3.0 and later:
+
+Run fish_vi_key_bindings to start vi mode
+Run fish_default_key_bindings to go back to default mode
+
+If you want to make it the default, add the fish_vi_key_bindings command to ~/.config/fish/config.fish.
+
+
+Know every config about fish 
+==============================
+run $ fish_config   => it will open the browser localhost with the config
+
+
+
+
+
+
+
+
+
+
