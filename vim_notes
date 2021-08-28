@@ -1,3 +1,23 @@
+===============
+move line -> delete it then paste it  [dd p]
+
+search and mode -> :/search_Key/+1m -> move one line below
+search and mode -> :/search_Key/-2m -> move one 2line above
+
+===========
+go to the last cursor -> g;
+
+========
+indent lines -> from 2 to 8 $ :2,8> 
+
+========
+show numbers in vim file 
+$ :set number
+$ :set nonumber -> opisite of set number
+========
+
+
+
 >>>>>>set vim as the default editor in unix>>>>>>
 sudo update-alternatives --config editor
 # Type the number which corresponds to Vim here (after installing it) then press Enter.
