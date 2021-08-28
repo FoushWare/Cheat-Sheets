@@ -1,0 +1,32 @@
+python envirnoment
+===============
+	$ brew install pipenv
+	$ pipenv shell -> activate the envirnoment and create Pipfile like package.json 
+	$ pipenv install django djangorestframework django-rest-knox
+
+====
+generate new django app:
+
+	django-admin startproject <name of the project> 
+	django-admin startproject leadmanger -> this will create new directory called leadmanager with file <manage.py> which we will use for migrations and other stuff 
+
+=======
+📁 cd to leadmanager directory 
+
+ ⚓  ~/S/F/D/leadmanager  python manage.py startapp leads -> this will create folder📁 callled lead
+
+==========
+⚙️  Go to the settings and add to the INSTALLED_APPS = [ 
+	'leads',
+	'rest_framework'
+
+]
+
+=========
+Go to the leads app :🧑💼
+
+	then create model
+
+ 
+
+
