@@ -11,3 +11,10 @@ virtualenv -p python3 venv
 source venv/bin/activate
 ````
 - pipenv
+
+
+
+
+### MysqlClient Error
+follow this link:https://stackoverflow.com/questions/5178292/pip-install-mysql-python-fails-with-environmenterror-mysql-config-not-found
+
