@@ -14,10 +14,22 @@ run $ fish_config   => it will open the browser localhost with the config
 
 
 
+========config file========== vi ~/.config/fish/config.fish
 
-
-
-
+# fish_shell vim mode
+fish_vi_key_bindings
+# fish_shell greeting
+set fish_greeting "🚀 Hello Foushware 👾 to my space 👽 "
+# git aliases
+alias gs "git status"
+alias ga "git add"
+alias gc "git commit"
+alias gp "git push"
+alias gpl "git pull"
+alias gch "git checkout"
+alias gt "git add -u && git commit --amend --no-edit && git push -f"
+alias gl "git log"
+============config file ============
 
 
 
