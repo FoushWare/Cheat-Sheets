@@ -29,6 +29,7 @@ alias gpl "git pull"
 alias gch "git checkout"
 alias gt "git add -u && git commit --amend --no-edit && git push -f"
 alias gl "git log"
+alias t "test"
 ============config file ============
 
 
