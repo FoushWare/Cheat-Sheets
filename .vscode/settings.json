@@ -1,0 +1,13 @@
+{
+  
+	// Removing the file preview on the right side of the editor in VS Code
+	"editor.minimap.enabled": false
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#FF2C70",
+    "titleBar.activeForeground": "#000",
+    "titleBar.inactiveForeground": "#000000CC",
+    "titleBar.inactiveBackground": "#FF2C70",
+    // "activityBar.background": "#FF2C70",
+    "statusBar.background": "#441423"
+  }
+}
