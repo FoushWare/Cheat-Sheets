@@ -1,3 +1,7 @@
+vscode & vim muiltiple cursor
+1) select the word i wanted  in the visual mode
+2) use gb to go to the next match word
+
 ===============
 move line -> delete it then paste it  [dd p]
 
