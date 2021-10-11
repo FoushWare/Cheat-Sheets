@@ -1,7 +1,7 @@
 {
   
 	// Removing the file preview on the right side of the editor in VS Code
-	"editor.minimap.enabled": false
+	"editor.minimap.enabled": false,
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#FF2C70",
     "titleBar.activeForeground": "#000",
@@ -9,5 +9,14 @@
     "titleBar.inactiveBackground": "#FF2C70",
     // "activityBar.background": "#FF2C70",
     "statusBar.background": "#441423"
-  }
+  },
+	//Ruby file formater  to work with the vscode extenstion
+"files.associations": {
+  "*.erb": "erb"
+},
+	//emmet for erb file  auto complete
+	"emmet.includeLanguages": {"erb": "html"}
+
+	
+	
 }
