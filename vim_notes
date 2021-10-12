@@ -1,3 +1,11 @@
+========= move to character in the quote
+'f' and 'F' commands that move the cursor forward and backward to the character you press after the command.
+
+So press f" to move to the next " character and F" to move to the previous one.
+============
+
+
+=======================
 🖱️ vscode & vim muiltiple🖲️ cursor 🪤🐭 ?
 1) select the word i wanted  in the visual mode
 2) use gb to go to the next match word
