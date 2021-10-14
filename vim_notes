@@ -4,6 +4,11 @@
 So press f" to move to the next " character and F" to move to the previous one.
 ============
 
+====Move to the begin & end of the current word ====
+b => begin 
+e => end
+
+
 
 =======================
 🖱️ vscode & vim muiltiple🖲️ cursor 🪤🐭 ?
