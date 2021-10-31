@@ -1,7 +1,7 @@
 {
   
 	// Removing the file preview on the right side of the editor in VS Code
-	"editor.minimap.enabled": false,
+  "editor.minimap.enabled": false,
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#FF2C70",
     "titleBar.activeForeground": "#000",
@@ -10,12 +10,76 @@
     // "activityBar.background": "#FF2C70",
     "statusBar.background": "#441423"
   },
-	//Ruby file formater  to work with the vscode extenstion
+//Ruby file formater  to work with the vscode extenstion
 "files.associations": {
   "*.erb": "erb"
 },
-	//emmet for erb file  auto complete
-	"emmet.includeLanguages": {"erb": "html"}
+//emmet for erb file  auto complete
+"emmet.includeLanguages": {"erb": "html"},
+"editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": true,
+  "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": false,
+  "editor.rulers": [80],
+  "editor.snippetSuggestions": "top",
+  "editor.wordBasedSuggestions": false,
+  "editor.suggest.localityBonus": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.showKeywords": false
+  },
+  "editor.renderWhitespace": "boundary",
+  "files.defaultLanguage": "{activeEditorLanguage}",
+  "javascript.validate.enable": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.build": true,
+    "**/.gh-pages": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.options": {
+    "env": {
+      "browser": true,
+      "jest/globals": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2019,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "no-debugger": "off"
+    }
+  },
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.iconTheme": "material-icon-theme",
+  "breadcrumbs.enabled": true,
+  "grunt.autoDetect": "off",
+  "gulp.autoDetect": "off",
+  "npm.runSilent": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.formatOnPaste": false,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true,
+  "php.suggest.basic": false	
 
 	
 	
