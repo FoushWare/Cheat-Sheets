@@ -1,3 +1,8 @@
+### ---------------- console [login to the console] -------------
+
+`> sudo -i -u postgres psql`
+
+
 # Databases
 
 ### List Databases
