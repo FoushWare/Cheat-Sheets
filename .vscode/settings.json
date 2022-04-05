@@ -1,8 +1,8 @@
 {
 	// How to enable native bracket matching:
 	  "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs":"active"
-  
+    "editor.guides.bracketPairs":"active",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 	// Removing the file preview on the right side of the editor in VS Code
   "editor.minimap.enabled": false,
   "workbench.colorCustomizations": {
