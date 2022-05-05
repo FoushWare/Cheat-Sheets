@@ -13,7 +13,13 @@
     // "activityBar.background": "#FF2C70",
     "statusBar.background": "#441423",
    "activityBarBadge.background": "#FFFF00",
-    "activityBarBadge.foreground": "#000000"
+    "activityBarBadge.foreground": "#000000",
+    "list.inactiveSelectionBackground": "#4a4a75",
+    // "list.activeSelectionBackground": "#ff0000"
+    "tab.activeBorder": "#ff0000",
+    "tab.unfocusedActiveBorder": "#000000",
+    "tab.activeBackground": "#4a4a75",
+    "tab.unfocusedactiveBackground": "#000000"
   },
 //Ruby file formater  to work with the vscode extenstion
 "files.associations": {
