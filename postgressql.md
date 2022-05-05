@@ -58,7 +58,10 @@ psql -h $HOSTNAME -U $USERNAME $DATABASE
 
 ```
 
-
+### Show all data in the table psql 
+` TABLE "table_name"; `
+### Extend tableView
+` \x `
 
 
 
