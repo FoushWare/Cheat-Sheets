@@ -1,3 +1,18 @@
+This file search index 🔥 🚀
+- search and replace
+- multicursors 
+- show line numbers in vim 
+- folding 
+- duplicate lines
+- new Tabs
+- merge lines 
+- write quick comments
+
+
+
+
+
+
 ========= move to character in the quote
 'f' and 'F' commands that move the cursor forward and backward to the character you press after the command.
 
