@@ -308,7 +308,16 @@ let g:ctrlp_user_command = 'dir %s /-n /b /s /a-d'  " Windows
 Check :help ctrlp-options for other options.
 
 ====================Things to search about for vim =============
-* copy things from file with terminal 
+* copy things from file with terminal
+ 
 * Search and Replace words
+```
+> search and replace in the entire file
+:%s/wordtoReplace/newWord/g 
+
+for more info visit https://linuxize.com/post/vim-find-replace/#:~:text=quick%20and%20easy.-,Basic%20Find%20and%20Replace,press%20the%20'Esc'%20key.
+
+
+```
 
 
