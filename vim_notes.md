@@ -7,17 +7,51 @@ This file search index 🔥 🚀
 - new Tabs
 - merge lines 
 - write quick comments
+- how-to-jump-between-matching-html-xml-tags
+
+
+====================== 🚀 how-to-jump-between-matching-html-xml-tags Resource: https://vi.stackexchange.com/questions/780/how-to-jump-between-matching-html-xml-tags
+
+
+You can jump between tags using visual operators, for example:
+
+Place the cursor on the tag.
+Enter visual mode by pressing v.
+Select the outer tag block by pressing a+t or i+t for inner tag block.
+Your cursor should jump forward to the matching closing html/xml tag. To jump backwards from closing tag, press o or O to jump to opposite tag.
+
+Now you can either exit visual by pressing Esc, change it by c or copy by y.
+
+To record that action into register, press qq to start recording, perform tag jump as above (including Esc), press q to finish. Then to invoke jump, press @q.
+
+See more help at :help visual-operators or :help v_it:
+
+at a <tag> </tag> block (with tags)
+
+it inner <tag> </tag> block
+
+Alternatively use plugin such as matchit.vim or surround.vim.
+
+See also:
+
+Using % in languages without curly braces
+Jump to matching XML tags in Vim at stackoverflow SE
+How can I find the close html tag quickly in vim? at stackoverflow SE
+Navigating HTML tags in Vim at stackoverflow SE
+How to navigate between begin and end html tag? at superuser SE
+VIM jump from one xml tag to the closing one at Unix SE
+How can I select an html tag's content in Vim? at superuser SE
+
+================================================================================================================================================
 
 
 
+=========================== 🚀 move to character in the quote
 
-
-
-========= move to character in the quote
 'f' and 'F' commands that move the cursor forward and backward to the character you press after the command.
 
 So press f" to move to the next " character and F" to move to the previous one.
-============
+
 
 ====Move to the begin & end of the current word ====
 b => begin 
@@ -25,7 +59,7 @@ e => end
 
 
 
-=======================
+==============================================================================================================================
 🖱️ vscode & vim muiltiple🖲️ cursor 🪤🐭 ?
 1) select the word i wanted  in the visual mode
 2) use gb to go to the next match word
