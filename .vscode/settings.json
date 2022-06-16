@@ -1,97 +1,99 @@
 {
+	// command cener 
+	"window.experimental.commandCenter": true,
 	// How to enable native bracket matching:
-	  "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs":"active",
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"editor.bracketPairColorization.enabled": true,
+	"editor.guides.bracketPairs": "active",
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 	// Removing the file preview on the right side of the editor in VS Code
-  "editor.minimap.enabled": false,
-  "workbench.colorCustomizations": {
-    "titleBar.activeBackground": "#FF2C70",
-    "titleBar.activeForeground": "#000",
-    "titleBar.inactiveForeground": "#000000CC",
-    "titleBar.inactiveBackground": "#FF2C70",
-    // "activityBar.background": "#FF2C70",
-    "statusBar.background": "#441423",
-   "activityBarBadge.background": "#FFFF00",
-    "activityBarBadge.foreground": "#000000",
-    "list.inactiveSelectionBackground": "#4a4a75",
-    // "list.activeSelectionBackground": "#ff0000"
-    "tab.activeBorder": "#ff0000",
-    "tab.unfocusedActiveBorder": "#000000",
-    "tab.activeBackground": "#4a4a75",
-    "tab.unfocusedactiveBackground": "#000000"
-  },
-//Ruby file formater  to work with the vscode extenstion
-"files.associations": {
-  "*.erb": "erb"
-},
-//emmet for erb file  auto complete
-"emmet.includeLanguages": {"erb": "html"},
-"editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.detectIndentation": true,
-  "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": false,
-  "editor.rulers": [80],
-  "editor.snippetSuggestions": "top",
-  "editor.wordBasedSuggestions": false,
-  "editor.suggest.localityBonus": true,
-  "editor.acceptSuggestionOnCommitCharacter": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.suggestSelection": "recentlyUsed",
-    "editor.suggest.showKeywords": false
-  },
-  "editor.renderWhitespace": "boundary",
-  "files.defaultLanguage": "{activeEditorLanguage}",
-  "javascript.validate.enable": false,
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/coverage": true,
-    "**/dist": true,
-    "**/build": true,
-    "**/.build": true,
-    "**/.gh-pages": true
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": false
-  },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "eslint.options": {
-    "env": {
-      "browser": true,
-      "jest/globals": true,
-      "es6": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 2019,
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "jsx": true
-      }
-    },
-    "rules": {
-      "no-debugger": "off"
-    }
-  },
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "workbench.iconTheme": "material-icon-theme",
-  "breadcrumbs.enabled": true,
-  "grunt.autoDetect": "off",
-  "gulp.autoDetect": "off",
-  "npm.runSilent": true,
-  "explorer.confirmDragAndDrop": false,
-  "editor.formatOnPaste": false,
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.smoothScrolling": true,
-  "php.suggest.basic": false	
-
-	
-	
+	"editor.minimap.enabled": false,
+	"workbench.colorCustomizations": {
+		"activityBarBadge.background": "#FFFF00",
+		"list.inactiveSelectionBackground": "#4a4a75",
+		"titleBar.activeBackground": "#fffb2c",
+		"titleBar.activeForeground": "#000",
+		"titleBar.inactiveForeground": "#000000CC",
+		"titleBar.inactiveBackground": "#fffb2c",
+		"tab.activeBorder": "#ff0000",
+		"tab.unfocusedActiveBorder": "#000000",
+		"tab.activeBackground": "#4a4a75",
+		"tab.unfocusedactiveBackground": "#000000"
+	},
+	//Ruby file formater  to work with the vscode extenstion
+	"files.associations": {
+		"*.erb": "erb"
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	//emmet for erb file  auto complete
+	"emmet.includeLanguages": {
+		"erb": "html"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.detectIndentation": true,
+	"editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
+	"editor.fontLigatures": false,
+	"editor.rulers": [
+		80
+	],
+	"editor.snippetSuggestions": "top",
+	"editor.wordBasedSuggestions": false,
+	"editor.suggest.localityBonus": true,
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.suggestSelection": "recentlyUsed",
+		"editor.suggest.showKeywords": false
+	},
+	"editor.renderWhitespace": "boundary",
+	"files.defaultLanguage": "{activeEditorLanguage}",
+	"javascript.validate.enable": false,
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/coverage": true,
+		"**/dist": true,
+		"**/build": true,
+		"**/.build": true,
+		"**/.gh-pages": true
+	},
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	"eslint.options": {
+		"overrideConfig": {
+			"env": {
+				"browser": true,
+				"jest/globals": true,
+				"es2021": true,
+				"jest": true
+			},
+			"parserOptions": {
+				"ecmaVersion": 12,
+				"sourceType": "module",
+				"ecmaFeatures": {
+					"jsx": true
+				}
+			},
+			"rules": {
+				"no-debugger": "off"
+			}
+		}
+	},
+	"workbench.colorTheme": "One Dark Pro Darker",
+	"workbench.iconTheme": "material-icon-theme",
+	"breadcrumbs.enabled": true,
+	"grunt.autoDetect": "off",
+	"gulp.autoDetect": "off",
+	"npm.runSilent": true,
+	"explorer.confirmDragAndDrop": false,
+	"editor.formatOnPaste": false,
+	"editor.cursorSmoothCaretAnimation": true,
+	"editor.smoothScrolling": true,
+	"php.suggest.basic": false
 }
