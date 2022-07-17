@@ -3,12 +3,18 @@ This file search index 🔥 🚀
 - multicursors 
 - show line numbers in vim 
 - folding 
+- go to file to edit
 - duplicate lines
 - new Tabs
 - merge lines 
 - write quick comments
 - how-to-jump-between-matching-html-xml-tags
 
+
+
+=================== 🚀 go to file to edit ======================= https://vi.stackexchange.com/questions/3364/open-filename-under-cursor-like-gf-but-in-a-new-tab-or-split
+
+gf - Edit existing file under cursor in same window
 
 ====================== 🚀 how-to-jump-between-matching-html-xml-tags Resource: https://vi.stackexchange.com/questions/780/how-to-jump-between-matching-html-xml-tags
 
