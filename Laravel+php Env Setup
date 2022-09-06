@@ -1,0 +1,8 @@
+## spin container for mysql with Docker
+```
+docker run --name ms -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password mysql
+```
+ms : image name i named it so i can call it easy instead of it's hash
+30306:3306 => port mapping in my machine and docker container 
+-e => for env varaiables 
+mysql => the image of mysql
