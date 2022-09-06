@@ -6,3 +6,21 @@ ms : image name i named it so i can call it easy instead of it's hash
 30306:3306 => port mapping in my machine and docker container 
 -e => for env varaiables 
 mysql => the image of mysql
+
+## bash into the container 
+```
+docker exec -it ms bash
+```
+## use mysql after bash into the container 
+
+```
+mysql -u root -ppassword
+```
+## create database 
+```
+create database test_development;
+```
+### dumb sql database to ms container
+```
+docker exec -i ms mysql -uroot -ppassword test_development < test.db.sql 
+```
