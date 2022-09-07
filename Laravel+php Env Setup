@@ -1,3 +1,28 @@
+
+
+
+-> Index of this file :
+
+1) Article for commands needed for start/stop/rename containers 
+2) Spin mysql Container 
+3) get inside the mysql container 
+4) create mysql database
+5) dump sql database to the mysql container
+6) php version switching 
+7) solving issues when  composer install 
+
+
+
+
+
+
+
+
+1) https://phoenixnap.com/kb/how-to-list-start-stop-docker-containers
+--------------------------------------------------------------------------------------------
+
+2) Spin mysql Container 
+--------------------------------------------------------------------------------------------
 ## spin container for mysql with Docker
 ```
 docker run --name ms2 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password mysql  --default-authentication-plugin=mysql_native_password
@@ -8,6 +33,10 @@ ms : image name i named it so i can call it easy instead of it's hash
 -e => for env varaiables 
 mysql => the image of mysql
 
+3) get inside the mysql container 
+---------------------------------------------------------------------------------------------
+
+
 ## bash into the container 
 ```
 docker exec -it ms bash
@@ -16,15 +45,24 @@ docker exec -it ms bash
 
 ```
 mysql -u root -ppassword
+
+4) create mysql database
+----------------------------------------------------------------------------------------------
+
 ```
 ## create database 
 ```
 create database test_development;
 ```
+5) dump sql database to the mysql container
+-----------------------------------------------------------------------------------------------
 ### dumb sql database to ms container
 ```
 docker exec -i ms mysql -uroot -ppassword test_development < test.db.sql 
 ```
+
+6) php version switching 
+------------------------------------------------------------------------------------------------
 
 ### php version
 
@@ -52,7 +90,8 @@ php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo '
 
 composer
 ```
-
+7) solving issues when  composer install 
+-------------------------------------------------------------------------------------------------------
 ### Errors when composer install 
 Error
 ```
