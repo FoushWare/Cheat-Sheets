@@ -29,6 +29,13 @@ Subjects you can see here in the link
 
 `git reflog` is a powerful command that logs every change to the tips of your branches, helping you recover lost commits and understand the sequence of changes in your repository as it shows [commiting,checkout,merge] all the steps. It is an essential tool for Git users to manage and troubleshoot their repositories effectively.
 
+=> git diff --word-dif 
+
+you can use it especially when working with tailwindcss to see what class added as the `git diff` will not show you the specific change but the all line change 
+![image](https://github.com/FoushWare/Cheat-Sheets/assets/18531447/a5061161-49c9-4b05-9d7e-46f59c882526)
+
+with word-dif 
+![image](https://github.com/FoushWare/Cheat-Sheets/assets/18531447/73d3363e-5162-4426-86c0-d55a57dcd693)
 
 
 ========================================
