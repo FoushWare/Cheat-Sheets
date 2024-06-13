@@ -65,7 +65,18 @@ will help us resovle this issue
 
 ==================
 
+shortcut for git rebase : 
 
+Setting up the alias : 
+```
+git config --global alias.up '!git fetch && git rebase origin/$(git symbolic-ref --short HEAD)'
+
+```
+Using the alias:
+```
+git up
+
+```
 
 
 
